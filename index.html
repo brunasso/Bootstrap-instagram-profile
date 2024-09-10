@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+
+        <!-- Button trigger modal -->
+        <div style="margin-left: auto;">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                Create a new post
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-body">
+                                <label for="exampleFormControlTextarea1">Captions:</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    placeholder="Add the caption of your post here"></textarea>
+                                </select>
+                                <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
+                                <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Publish</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+                <div class="dropdown-menu">
+                    <style>
+                        .dropdown-menu {
+                            right: 0;
+                            left: auto;
+                        }
+                    </style>
+                    <button class="dropdown-item" type="button">Profile</button>
+                    <button class="dropdown-item" type="button">Accesibility</button>
+                    <button class="dropdown-item" type="button">Pivacy and Data</button>
+                    <hr>
+                    <button class="dropdown-item text-danger" type="button">Log out</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+
+    <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+            <i class="fa-solid fa-table-cells"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+            <i class="fa-solid fa-square"></i>
+          </a>
+        </li>
+      </ul>
+      
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" >
+          <div class="d-flex flex-wrap justify-content-center" >
+            <img class="col-4 mb-3" src="./img/1.jpg" alt="Dog">
+            <img class="col-4 mb-3" src="./img/2.jpg" alt="People">  
+            <img class="col-4 mb-3" src="./img/3.jpg" alt="Coast">
+            <img class="col-4 mb-3" src="./img/4.jpg" alt="Woman">
+            <img class="col-4 mb-3" src="./img/5.jpg" alt="Eiffel">
+            <img class="col-4 mb-3" src="./img/6.jpg" alt="Ronaldo">
+            <img class="col-4 mb-3" src="./img/7.jpg" alt="Family">
+            <img class="col-4 mb-3" src="./img/8.jpg" alt="Code">
+            <img class="col-4 mb-3" src="./img/9.jpg" alt="Teammate">
+          </div>
+        </div>
+      
+        <div class="tab-pane fade d-flex justify-content-between" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" style="flex-direction: column;">
+            <div class="card justify-content-between d-flex w-25 mb-2 center-card-css">
+                <div class="d-flex justify-content-between align-items-center p-2">
+                    <h5 class="mb-0">My Crazy Dog Spark!</h5>
+                    <small class="text-muted">12/09</small> 
+                  </div>
+                <img class="card-img-top" src="./img/1.jpg" alt="Dog">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title mb-0">234 Likes</h5> 
+                  </div>
+                  <p class="card-text mt-2">This is an example of a very good photo that you can post on Instagram.</p>
+                </div>
+            </div>
+            <div class="card justify-content-center d-flex w-25 mb-2 center-card-css">
+                <div class="d-flex justify-content-between align-items-center p-2">
+                  <h5 class="mb-0">My Crazy Dog Spark!</h5>
+                  <small class="text-muted">12/09</small> 
+                </div>
+                <img class="card-img-top" src="./img/2.jpg" alt="People">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title mb-0">234 Likes</h5> 
+                  </div>
+                  <p class="card-text mt-2">This is an example of a very good photo that you can post on Instagram.</p>
+                </div>
+              </div>
+              
+              <div class="card justify-content-center d-flex w-25 mb-2 center-card-css">
+                <div class="d-flex justify-content-between align-items-center p-2">
+                  <h5 class="mb-0">Summer Vibes!</h5>
+                  <small class="text-muted">26/08</small>
+                </div>
+                <img class="card-img-top" src="./img/3.jpg" alt="Coast">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title mb-0">198 Likes</h5> 
+                  </div>
+                  <p class="card-text mt-2">This is an example of a very good photo that you can post on Instagram.</p>
+                </div>
+              </div>
+            
+              <div class="card justify-content-center d-flex w-25 mb-2 center-card-css">
+                <div class="d-flex justify-content-between align-items-center p-2">
+                  <h5 class="mb-0">City Lights!</h5>
+                  <small class="text-muted">12/08</small>
+                </div>
+                <img class="card-img-top" src="./img/4.jpg" alt="Woman">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title mb-0">145 Likes</h5> 
+                  </div>
+                  <p class="card-text mt-2">This is an example of a very good photo that you can post on Instagram.</p>
+                </div>
+              </div>
+            
+              <div class="card justify-content-center d-flex w-25 mb-2 center-card-css">
+                <div class="d-flex justify-content-between align-items-center p-2">
+                  <h5 class="mb-0">Eiffel Tower Glow!</h5>
+                  <small class="text-muted">29/07</small>
+                </div>
+                <img class="card-img-top" src="./img/5.jpg" alt="Eiffel">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title mb-0">250 Likes</h5> 
+                  </div>
+                  <p class="card-text mt-2">This is an example of a very good photo that you can post on Instagram.</p>
+                </div>
+              </div>
+            
+              <div class="card justify-content-center d-flex w-25 mb-2 center-card-css">
+                <div class="d-flex justify-content-between align-items-center p-2">
+                  <h5 class="mb-0">Sunny Beach Day!</h5>
+                  <small class="text-muted">15/07</small>
+                </div>
+                <img class="card-img-top" src="./img/6.jpg" alt="Ronaldo">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title mb-0">180 Likes</h5> 
+                  </div>
+                  <p class="card-text mt-2">This is an example of a very good photo that you can post on Instagram.</p>
+                </div>
+              </div>
+            
+              <div class="card justify-content-center d-flex w-25 mb-2 center-card-css">
+                <div class="d-flex justify-content-between align-items-center p-2">
+                  <h5 class="mb-0">Family Time!</h5>
+                  <small class="text-muted">01/07</small>
+                </div>
+                <img class="card-img-top" src="./img/7.jpg" alt="Family">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title mb-0">220 Likes</h5> 
+                  </div>
+                  <p class="card-text mt-2">This is an example of a very good photo that you can post on Instagram.</p>
+                </div>
+              </div>
+            
+              <div class="card justify-content-center d-flex w-25 mb-2 center-card-css">
+                <div class="d-flex justify-content-between align-items-center p-2">
+                  <h5 class="mb-0">Coding Fun!</h5>
+                  <small class="text-muted">17/06</small>
+                </div>
+                <img class="card-img-top" src="./img/8.jpg" alt="Code">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title mb-0">205 Likes</h5> 
+                  </div>
+                  <p class="card-text mt-2">This is an example of a very good photo that you can post on Instagram.</p>
+                </div>
+              </div>
+            
+              <div class="card justify-content-center d-flex w-25 mb-2 center-card-css">
+                <div class="d-flex justify-content-between align-items-center p-2">
+                  <h5 class="mb-0">Great Teammates!</h5>
+                  <small class="text-muted">03/06</small>
+                </div>
+                <img class="card-img-top" src="./img/9.jpg" alt="Teammate">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="card-title mb-0">190 Likes</h5> 
+                  </div>
+                  <p class="card-text mt-2">This is an example of a very good photo that you can post on Instagram.</p>
+                </div>
+              </div>
+            
+              <style>
+                .center-card-css{
+                  margin: auto;
+                }
+              </style>
+
+        </div>
+      </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</html>
